@@ -2,6 +2,17 @@
 ## Description
 Very simple random int generator
 
+## Dependencies
+All you need is:
+- build-essential (make)
+- golang
+
+## Build
+Simply do:
+```
+make all
+```
+
 ## Usage
 There are two ways to generate random integer. 
 
