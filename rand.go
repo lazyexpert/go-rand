@@ -12,7 +12,8 @@ func main() {
 	args := os.Args
 	max := args[1]
 
-	random := rand.New(rand.NewSource(time.Now().UnixNano()))
+	source := rand.NewSource(time.Now().UnixNano())
+	random := rand.New(source)
 	maxNum, err := strconv.Atoi(max)
 	if err == nil {
 		fmt.Println(random.Intn(maxNum))
